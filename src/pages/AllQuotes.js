@@ -5,10 +5,10 @@ import { getAllQuotes } from "../lib/api";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
 import NoQuotesFound from '../components/quotes/NoQuotesFound';
 
-const DUMMY_QUOTES = [
-  { id: "q1", author: "Masa", text: "Learning is fun!" },
-  { id: "q2", author: "Yoshi", text: "Learning is Great!" },
-];
+// const DUMMY_QUOTES = [
+//   { id: "q1", author: "Masa", text: "Learning is fun!" },
+//   { id: "q2", author: "Yoshi", text: "Learning is Great!" },
+// ];
 
 const AllQuotes = () => {
   const { sendRequest, status, data: loadedQuotes, error } = useHttp(getAllQuotes, true);
